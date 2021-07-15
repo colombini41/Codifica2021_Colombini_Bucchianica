@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;700&display=swap');
+body{
+    background-color: #24b5c6;
+    margin-top: -3%;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+#TITOLO {
+    font-family: 'Fuggles';
+    text-align:center;
+    font-size: 100px;
+}
+
+
+#menu{
+    display: none;
+    width: 20%;
+    transform: translate(30%,-138px);
+    float: right;
+}
+ul#menu {
+    font-family: 'Dancing Script', cursive;
+    list-style: none;
+}
+
+ul#menu li {
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px hsla(0,0%,0%,.3);
+    border-radius: 5%;
+    display: block;
+    margin: 2px;
+    float: left; 
+    border: 3px solid black; 
+    background-color: #afeeee;
+    display: block;
+    text-align: center;    
+}
+
+#menu a {
+    width: 100%;
+    font-weight: bold;
+    font-size: 130%;
+    color: black;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+
+#menu:hover li {
+    background-color: black;
+    -webkit-transition-duration: 0.5s;
+    width: 50%;
+}
+
+#menu:hover li a {
+    color: #afeeee;
+    width: 50%;
+}
+
+#sottotitolo , #sottotitolo2{
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    font-size: 150%;
+    margin-top: -5%;
+}
+#sottotitolo2{
+    transform: translateY(270%);
+}
+
+.titolino {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 180%;
+    transform: translateY(90%);
+}
+
+#contenitore_cartoline{
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+}
+
+#cartolina1, #cartolina2, #cartolina3 {
+    width: 33%;
+    display: inline-block;
+    margin-top: -7%;
+}
+
+.img_cartolina{
+    width: 68%;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 14%;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px 5px hsla(0,0%,0%,.3);
+    -webkit-transition:-webkit-transform 700ms ease;
+}
+
+.img_cartolina:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+}
+
+/* modifiche al click di una cartolina */
+
+.titolo_modificato {
+    transform: translateY(-200%);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: -1%
+}
+
+.fronte_modificato,.retro_modificato{
+    margin-left: auto;
+    transform: translateY(-50%);
+    margin-bottom: 30px;
+}
+
+.fronte_modificato {
+    width: 15%;
+}
+
+.fronte_modificato:hover{
+    display: block;
+    cursor: auto;
+}
+
+.retro_modificato {
+    width: 37.3%;
+    margin-left:1%;
+}
+
+.retro_modificato:hover{
+    display: block;
+}
+.secondari {
+    margin-bottom: 100px;
+}
+.tab_generiche{
+    transform: translateY(-30%);
+}
+
+.tab_generiche{
+    width: 54.5%; 
+    float:left; 
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px 5px hsla(0,0%,0%,.3);
+    border-radius: 9px;
+    padding: 1%;
+    font-family: 'Josefin Slab', serif;
+    background-image: radial-gradient(circle at 50% -20.71%, #faffff 0, #d8f0fa 25%, #b5def2 50%, #92cbeb 75%, #72b9e5 100%);
+}
+
+.tab_specifici{
+    width: 40%;
+    float:right;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px 5px hsla(0,0%,0%,.3);
+    border-radius: 9px;
+    padding: 1%;
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: -20%;
+    background-image: radial-gradient(circle at 50% -20.71%, #faffff 0, #d8f0fa 25%, #b5def2 50%, #92cbeb 75%, #72b9e5 100%);
+}
+#Rimembranze{
+    transform: translateY(-70.3%);
+}
+#Donna_gialla{
+    transform: translateY(-79.9%);
+}
+#Crepuscole{
+    transform: translateY(-82.9%);
+}
+
+.titoli_tabella{
+    display: none;
+}
+
+.titolini_tab, .titolini_tab2 {
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    border-top: 3px solid black ;
+    width: 120%;
+    background-color: #afeeee;
+    height: 200px;
+    margin: -10px;
+}
+
+#testo_footer {
+    width: 95%;
+    margin: auto;
+    font-family: 'Josefin Slab', serif;
+}
+
+#info_pubblicazione, #info_edizione{
+    float: left;
+    width: 50%;
+    line-height: 20%;
+    font-size: 90%;
+}
+
+#info_edizione{
+    transform: translateX(-22%);
+}
+
+#titolo_info_edizione{
+    transform: translateX(-62%);
+    margin-top: -3%;
+    float: left;
+}
+
+
