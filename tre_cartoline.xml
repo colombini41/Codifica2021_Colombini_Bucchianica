@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+<?xml-stylesheet type="text/xsl" href="tre_cartoline.xsl"?>
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cartoline a Oliva</title>
+                <!-- TRASCRITTORE nome e cognome-->
+                <respStmt>
+                    <resp>Trascrizione effettuata da</resp>
+                    <name xml:id="LC">Leonardo Colombini</name>
+                    <name xml:id="PB">Pietro Bucchianica</name>
+                </respStmt>
+                
+                <!-- ENTE DI APPARTENENZA -->
+                <respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="CSP">Comune della Spezia</name>
+                </respStmt>
+            </titleStmt>
+            
+            <editionStmt>
+                <edition>Studenti di Codifica di testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                    <!-- COMPILAZIONE -->
+                    <date>2021</date>
+                </edition>
+                
+                <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <name xml:id="TC">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">E. Ratti</name>
+                </respStmt>
+            </editionStmt>
+            
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <msDesc>
+                    <!-- COLLOCAZIONE SPECIFICA -->
+                    <!-- CODICE IDENTIFICATIVO -->
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno>...</idno>
+                    </msIdentifier>
+                    
+                    <!-- Informazioni sul contenuto della cartolina -->
+                    <!-- DESCRIZIONE -->
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                    <stamp>francobollo - Regno d'Italia</stamp>
+                                </support>
+                                
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                </msDesc>
+                
+                <!-- NOMI -->
+                
+                <listPerson>
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                    </person>
+                </listPerson>
+
+                <listPlace>
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="N">IT</country>
+                    </place>
+
+                    <place xml:id="SP">
+                        <placeName>La Spezia</placeName>
+                        <district type="comune">La Spezia</district>
+                        <district type="provincia">SP</district>
+                        <country key="N">IT</country>
+                    </place>
+                </listPlace>                
+                
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <charDecl>
+                <glyph xml:id="ss">
+                    <charProp>
+                        <localName> name </localName>
+                        <value> Nella doppia s, la seconda viene rappresentata da una s lunga </value>
+                    </charProp>
+                    <charProp>
+                        <localName> entity </localName>
+                        <value> "ss" </value>
+                    </charProp>
+                </glyph>
+            </charDecl>
+        </encodingDesc>
+    </teiHeader>
+        
+    <!-- prima cartolina (Rimembranze) -->
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title xml:id="Rimembranze">Rimembranze</title>
+                    <respStmt>
+                        <resp>Trascritto da:</resp>
+                        <name ref="LC">Leonardo Colombini</name>
+                        <name ref="PB">Pietro Bucchianica</name>
+                    </respStmt>
+                    
+                </titleStmt>
+                
+                <editionStmt>
+                    <edition> Studenti di Codifica di testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                        <date>2021</date>
+                    </edition>
+                    
+                </editionStmt>
+
+                <publicationStmt>
+                    <publisher>Unipi</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+                
+                <sourceDesc>
+                    <bibl>
+                        <title>Rimembranze</title>
+                        <author> Domenico Mastroianni </author>
+                        <publisher>"Cromogliptica" A. Marzi</publisher>
+                        <pubPlace>Roma</pubPlace>
+                    </bibl>
+
+                    <!-- NOMI -->
+    
+                    <listPerson>
+                        <person xml:id="GC">
+                            <persName>
+                                <forename>Giovanni</forename>
+                                <surname>Coliola</surname>
+                            </persName>
+                            <sex>M</sex>
+                        </person>
+
+                        <person xml:id="DM">
+                            <persName>
+                                <forename>Domenico</forename>
+                                <surname>Mastroianni</surname>
+                            </persName>
+                            <sex>M</sex>
+                        </person>
+
+                        <person xml:id="AM">
+                            <persName>
+                                <forename>A.</forename>
+                                <surname>Marzi</surname>
+                            </persName>
+                        </person>
+                
+                    </listPerson>
+                    
+                    <listPlace>
+                        <place xml:id="RM">
+                            <placeName>Roma</placeName>
+                            <district type="comune">Roma</district>
+                            <district type="provincia">RM</district>
+                            <country key="N">IT</country>
+                        </place>
+
+                    </listPlace>
+                    
+                </sourceDesc>
+            </fileDesc>
+            
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#GC">Giovanni Coliola</persName>
+                        <placeName ref="#SP">La Spezia</placeName>
+                        <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                        <date type="writing" when="1916-12-24">1916/12/24</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT">Oliva Tortura</persName>
+                        <placeName ref="#RV">Ravenna</placeName> 
+                    </correspAction>
+                </correspDesc>
+            </profileDesc>
+            
+        </teiHeader>
+        <!-- DEFINIZIONE -->
+        <facsimile>
+            <surface xml:id="fronte_009">
+                <graphic url="image/009-Rimembranze/009F.jpg" />
+            </surface>
+            <surface xml:id="retro_009" type="retro">
+                <graphic url="image/009-Rimembranze/009R.jpg" width='335px' height='213px' />
+                <zone ulx="5" uly="120" lrx="27" lry="209" xml:id="stampe1_009"/>
+                <zone ulx="4" uly="2" lrx="18" lry="100" xml:id="stampe2_009"/>
+                <zone ulx="28" uly="82" lrx="44" lry="126" xml:id="stampe3_009"/>
+                <zone ulx="150" uly="138" lrx="158" lry="204" xml:id="stampe4_009"/>
+                <zone ulx="149" uly="7" lrx="158" lry="59" xml:id="stampe5_009"/>
+                <zone ulx="123" uly="20" lrx="149" lry="209" xml:id="luogoedata_009"/>
+                <zone ulx="41" uly="21" lrx="120" lry="211" xml:id="messaggio_009"/>
+                <zone ulx="220" uly="11" lrx="242" lry="38" xml:id="numcartolina_009"/>
+                <zone ulx="256" uly="3" lrx="332" lry="81" xml:id="francobolloetimbri_009"/>
+                <zone ulx="164" uly="49" lrx="255" lry="85" xml:id="destinazione1_009"/> 
+                <zone ulx="165" uly="79" lrx="334" lry="111" xml:id="destinazione2_009"/> 
+                <zone ulx="165" uly="111" lrx="334" lry="152" xml:id="destinazione3_009"/> 
+                <zone ulx="166" uly="152" lrx="333" lry="208" xml:id="destinazione4_009"/> 
+            </surface>
+        </facsimile>
+        <text type="cartolina" xml:id="cartolina009">
+        <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte">
+                    <figure>
+                        <graphic url="image/009-Rimembranze/009F.jpg" />
+                        <figDesc>Monaca seduta con una rosa in mano e due colombe in primo piano. In basso a destra si legge la firma "D. Mastroianni Roma"</figDesc>
+                        <head>Rimembranze - D. Mastroianni</head>
+                    </figure>
+                </div>
+                <div type="retro">
+                    <div type="stamp">
+                        <p>
+                            <stamp facs="stampe1_009"> Sculture Mastroianni Roma Edizione propria n° 21</stamp>
+                            <stamp facs="stampe2_009"> "Cromogliptica" A. Marzi - Roma </stamp>
+                            <stamp facs="stampe3_009"> "Rimembranze" Reminescences</stamp>
+                            <stamp facs="stampe4_009"> Riproduzione interdetta </stamp>
+                            <stamp facs="stampe5_009"> Stampata in Italia </stamp>
+                        </p>
+                    </div>
+                    <div type="message">
+                        <opener facs="luogoedata_009">
+                            <placeName ref="SP">Spezia</placeName>
+                            <date> 24/12/1916 </date>
+                        </opener>
+                        <p></p>
+                        <closer facs="messaggio_009">
+                            <w>Affettuosissimi</w>
+                            <signed><persName ref="#GC"> Giovanni</persName></signed>
+                        </closer>
+                    </div>
+                    <div facs="numcartolina_009" type="num_cartolina">
+                        <p> <num type="cardinal"> 9 </num> </p>
+                    </div>
+                    <div type="francobolli">
+                        <p>
+                            <stamp type="postmark"> 
+                                <mentioned>Scritture illeggibili</mentioned>
+                            </stamp>
+                            <stamp facs="francobolloetimbri_009" type="postage">Francobollo da 5 centesimi del Regno d'Italia</stamp>
+                        </p>
+                    </div>
+                    
+                    <div type="destination">
+                        <p>
+                            <address>
+                                <addrLine facs="destinazione1_009">
+                                    <choice> 
+                                        <abbr type="title">Gent- Sig-</abbr>
+                                        <expan> Gent<ex>ile</ex> Sig<ex>nora</ex> </expan>
+                                    </choice>
+                                </addrLine>
+                                <addrLine facs="destinazione2_009"><persName ref="#OT">Oliva Turtura</persName></addrLine>
+                                <addrLine facs="destinazione3_009">Via Girolamo Ro<g ref="ss">ss</g>i <num>58</num> </addrLine>
+                                <addrLine facs="destinazione4_009"><placeName ref="#RV">Ravenna</placeName></addrLine>
+                            </address>
+                        </p>
+                    </div>
+                </div>
+            </body>
+        </text>
+    </TEI>
+
+    <!-- seconda cartolina (Donna in giallo in posa) -->
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title xml:id="Donna_gialla">Donna in giallo in posa</title>
+                    <respStmt>
+                        <resp>Trascritto da:</resp>
+                        <name ref="LC">Leonardo Colombini</name>
+                        <name ref="PB">Pietro Bucchianica</name>
+                    </respStmt>
+                    
+                </titleStmt>
+                
+                <editionStmt>
+                    <edition> Studenti di Codifica di testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                        <date>2021</date>
+                    </edition>
+                </editionStmt>
+
+                <publicationStmt>
+                    <publisher>Unipi</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+                
+                <sourceDesc>
+                    <bibl>
+                        <title type="custom" resp="#ES">[Donna in giallo in posa]</title> 
+                        <author>Achille Luciano Mauzan</author>
+
+                    </bibl>
+
+                    <!-- NOMI -->
+    
+                    <listPerson>
+
+                        <person xml:id="ALM">
+                            <persName>
+                                <forename>Achille Luciano</forename>
+                                <surname>Mauzan</surname>
+                            </persName>
+                            <sex>M</sex>
+                            <note>Autore del dipinto sul fronte</note>
+                        </person>
+                
+                    </listPerson>
+                    
+                    <listPlace>
+                        <place xml:id="MI">
+                            <placeName>Milano</placeName>
+                            <district type="comune">Milano</district>
+                            <district type="provincia">MI</district>
+                            <country key="N">IT</country>
+                            <note>...</note>
+                        </place>
+                    </listPlace>
+                    
+                </sourceDesc>
+            </fileDesc>
+            
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#GC">Giovanni Coliola</persName>
+                        <placeName> Z. G. </placeName>
+                        <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                        <date type="writing" when="1917-02-19">1917/02/19</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="OT">Oliva Tortura</persName>
+                        <placeName ref="RV">Ravenna</placeName> 
+                    </correspAction>
+                </correspDesc>
+            </profileDesc>
+            
+            
+        </teiHeader>
+        <facsimile>
+            <surface xml:id="fronte_039">
+                <graphic url="image/039-Donna_in_giallo/039F.jpg" />
+            </surface>
+            <surface xml:id="retro_039" type="retro">
+                <graphic url="image/039-Donna_in_giallo/039R.jpg" width='389.5px' height='246.5px'/>
+                <zone ulx="2" uly="81" lrx="31" lry="240" xml:id="stampe_039"/>
+                <zone ulx="3" uly="2" lrx="37" lry="33" xml:id="numcartolina_039"/>
+                <zone ulx="25" uly="37" lrx="62" lry="208" xml:id="luogoedata_039"/>
+                <zone ulx="58" uly="30" lrx="169" lry="235" xml:id="messaggio_039"/>
+                <zone ulx="153" uly="7" lrx="263" lry="114" xml:id="timbroparticolare_039"/>
+                <zone ulx="257" uly="7" lrx="387" lry="108" xml:id="francobolloetimbri_039"/>
+                <zone ulx="175" uly="84" lrx="268" lry="121" xml:id="destinazione1_039"/>
+                <zone ulx="184" uly="120" lrx="368" lry="154" xml:id="destinazione2_039"/>
+                <zone ulx="184" uly="156" lrx="374" lry="188" xml:id="destinazione3_039"/>
+                <zone ulx="244" uly="190" lrx="382" lry="225" xml:id="destinazione4_039"/>
+
+            </surface>
+        </facsimile>
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="cartolina039">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte">
+                    <figure>
+                        <graphic url="image/039-Donna_in_giallo/039F.jpg" />
+                        <figDesc>Donna con vestito giallo e cappello in posa</figDesc>
+                        <head>Donna in giallo in posa - Achille L. Mauzan</head>
+                    </figure>
+                </div>
+                <div type="retro">
+                    <div facs="numcartolina_039" type="num_cartolina">
+                        <p> <num type="cardinal"> 39 </num> </p>
+                    </div>
+                    <div type="stamp">
+                        <p> <stamp facs="stampe_039"> Proprietà artistica riservata N° 202-1</stamp> </p>
+                    </div>
+                    <div type="message">
+                        <opener facs="luogoedata_039"> 
+                            <placeName><abbr type="geographic">Z. G., </abbr></placeName>
+                            <date> 19/02/1916 </date>
+                        </opener>
+                        <p></p>
+                        <closer facs="messaggio_039">
+                            <w>Ardentissimi</w>
+                            <signed><persName ref="#GC"> Giovannino</persName></signed>
+                        </closer>
+                    </div>
+                    <div type="francobolli">
+                        <p>
+                            <stamp facs="timbroparticolare_039" type="postmark">
+                                <mentioned> VERIFICATO PER CENSURA - Ospedale Chirurgico Mobile "Città di Milano" - Croce Rossa Italiana </mentioned>
+                            </stamp>
+                            <stamp facs="francobolloetimbri_039" type="postage">Francobollo da 5 centesimi del Regno d'Italia</stamp>
+                        </p>
+                    </div>
+                    <div type="destination">
+                        <p>
+                            <address>
+                                <addrLine facs="destinazione1_039">
+                                    <choice>
+                                        <abbr type="title">Sig na</abbr>
+                                        <expan> Sig<ex>nori</ex>na </expan>
+                                    </choice>
+                                </addrLine>
+                                <addrLine facs="destinazione2_039"><persName ref="#OT">Oliva Turtura</persName></addrLine>
+                                <addrLine facs="destinazione3_039">Via Girolamo Ro<g ref="ss">ss</g>i 58</addrLine>
+                                <addrLine facs="destinazione4_039"><placeName ref="#RV">Ravenna</placeName></addrLine>
+                            </address>
+                        </p>
+                    </div>
+                </div>
+            </body>
+        </text>
+    </TEI>
+
+    <!-- terza cartolina (Au Crepuscole) -->
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    
+                    <title xml:id="Crepuscole">Au Crepuscole</title>
+                    <respStmt>
+                        <resp>Trascritto da:</resp>
+                        <name ref="LC">Leonardo Colombini</name>
+                        <name ref="PB">Pietro Bucchianica</name>
+                    </respStmt>  
+                </titleStmt>
+                
+                <editionStmt>
+                    <edition> Studenti di Codifica di testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                        <date>2021</date>
+                    </edition>                    
+                </editionStmt>
+
+                <publicationStmt>
+                    <publisher>Unipi</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+                
+                <notesStmt>
+                    <note>
+                    Sul fronte riporta il logo "AN PARIS" preceduto dal numero della cartolina 238
+                    Sul retro riporta la stampa “Copyright by A. Noyer 1912 – Allegorie n° 288 Reproduction interdite tous pays”
+                    </note>
+                </notesStmt>
+                
+                <sourceDesc>
+                    <bibl>
+                        <title>Au Crepuscole</title>
+                        <author>Domenico Mastroianni</author>
+                        <publisher>A. Noyer</publisher>
+                        <pubPlace>Paris</pubPlace>
+                    </bibl>
+
+                    <listPerson>
+                        <person xml:id="AN">
+                            <persName>
+                                <forename>Armand</forename>
+                                <surname>Noyer</surname>
+                            </persName>
+                            <note>Casa editrice di fotografie</note>
+                        </person>
+                
+                    </listPerson>
+                    
+                    <listPlace>
+                        <place xml:id="PA">
+                            <placeName>Paris</placeName>
+                            <country key="N">FR</country>
+                        </place>
+
+                        <place xml:id="AR">
+                            <placeName>Arona</placeName>
+                            <district type="comune">Arona</district>
+                            <district type="provincia">NO</district>
+                            <country key="N">IT</country>
+                        </place>
+
+                        <place xml:id="VE">
+                            <placeName>Venezia</placeName>
+                            <district type="comune">Venzia</district>
+                            <district type="provincia">VE</district>
+                            <country key="N">IT</country>
+                        </place>
+                    </listPlace>
+                    
+                </sourceDesc>
+            </fileDesc>
+            
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName> Banchi </persName>
+                        <placeName ref="RV">Ravenna</placeName> 
+                        <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                        <date type="writing" when="1916-08-11">1913/08/11</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="OT">Oliva Tortura</persName> 
+                        <placeName ref="AR">Arona</placeName> 
+                    </correspAction>
+                </correspDesc>
+            </profileDesc>
+        </teiHeader>
+        <facsimile>
+            <surface xml:id="fronte_063">
+                <graphic url="image/063-Au_Crepuscole/063F.jpg" />
+            </surface>
+            <surface xml:id="retro_063" type="retro">
+                <graphic url="image/063-Au_Crepuscole/063R.jpg" width='334.5px' height='211.5px'/>
+                <zone ulx="9" uly="72" lrx="17" lry="174" xml:id="stampe1_063"/>
+                <zone ulx="17" uly="93" lrx="26" lry="165" xml:id="stampe2_063"/>
+                <zone ulx="2" uly="0" lrx="174" lry="43" xml:id="luogoedata_063"/>
+                <zone ulx="25" uly="42" lrx="168" lry="196" xml:id="messaggio_063"/>
+                <zone ulx="187" uly="27" lrx="220" lry="54" xml:id="numcartolina_063"/>
+                <zone ulx="248" uly="-2" lrx="330" lry="72" xml:id="francobolloetimbri_063"/>
+                <zone ulx="176" uly="0" lrx="286" lry="102" xml:id="destinazione1_063"/>
+                <zone ulx="188" uly="102" lrx="331" lry="130" xml:id="destinazione2_063"/>
+                <zone ulx="176" uly="130" lrx="329" lry="156" xml:id="destinazione3_063"/>
+                <zone ulx="174" uly="164" lrx="332" lry="200" xml:id="destinazione4_063"/>
+            </surface>
+        </facsimile>
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="cartolina063">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte">
+                    <figure>
+                        <graphic url="image/063-Au_Crepuscole/063F.jpg" />
+                        <figDesc>Coppia di innamorati in gondola con gondoliere </figDesc>
+                        <head>Au Crepuscole - D. Mastroianni</head>
+                    </figure>
+                </div>
+                <div type="retro">
+                    <div type="message">
+                        <opener facs="luogoedata_063">
+                            <placeName>Ravenna </placeName>
+                            <date> 11-VII-'913</date>
+                        </opener>
+                        <p></p>
+                        <closer facs="messaggio_063">
+                            <w>Dimenticando...</w>
+                            <signed><persName> Banchi </persName></signed>
+                        </closer>
+                    </div>
+                    <div type="stamp">
+                        <p>
+                            <stamp facs="stampe1_063">“Copyright by A. Noyer 1912 – Allegorie n° 288 </stamp>
+                            <stamp facs="stampe2_063"> Reproduction interdite tous pays”</stamp>
+                        </p>
+                    </div>
+                    <div type="francobolli">
+                        <p>
+                            <stamp facs="francobolloetimbri_063" type="postage">Francobollo da 5 centesimi del Regno d'Italia</stamp>
+                        </p>
+                    </div>
+                    <div facs="numcartolina_063" type="num_cartolina">
+                        <p> <num type="cardinal"> 63 </num> </p>
+                    </div>
+                    <div type="destination">
+                        <p>
+                            <address>
+                                <addrLine facs="destinazione1_063">Signorina</addrLine>
+                                <addrLine facs="destinazione2_063"><persName ref="#OT">Olivia Turtura</persName></addrLine>
+                                <addrLine facs="destinazione3_063">presso sig. Cibecchini Via Cavour 12</addrLine>
+                                <addrLine facs="destinazione4_063"> <placeName ref="#AR">(Lago Maggiore) Arona</placeName></addrLine>
+                            </address>
+                        </p>
+                    </div>
+                </div>
+            </body>
+        </text>
+    </TEI>
+</teiCorpus>
